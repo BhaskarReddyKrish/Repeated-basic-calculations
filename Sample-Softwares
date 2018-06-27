@@ -1,0 +1,76 @@
+/*
+Author:Bhaskar Reddy Krishnamareddypalli
+Date:27 June 2018
+*/
+#include<stdio.h>
+void add();
+void sub();
+void mul();
+void div();
+void main()
+{
+	printf("\t\t\t\t\tBasic software with C Programming\n");
+	while(1)
+	{
+	int i;
+	printf("The choises are\n\t1.Addition\n\t2.Subtraction\n\t3.Multiplication\n\t4.Division\n\t5:Exit\n");
+	printf("Enter your Choise:\n");
+	scanf("%d",&i);
+	if(i==5)
+	{
+		exit(1);
+		}
+	if(i>5)
+	{
+		printf("Oops!!You entered an invalid choice.\nPlease Re-enter a valid Choise\n");
+		printf("---------------------------------------------\n");
+		}
+	switch(i)
+	{
+		case 1:add();
+		       break;
+		case 2:sub();
+			   break;
+		case 3:mul();
+			   break;
+		case 4:div();
+		       break;
+	}
+	}
+}
+void add()
+{
+	int a,b;
+	printf("You opted for addition\n\n");
+	printf("Enter the two numbers for operation\n");
+	scanf("%d %d",&a,&b);
+	printf("The result is = %d\n",a+b);
+	printf("---------------------------------------------\n");
+}
+void sub()
+{
+	int a,b;
+	printf("You opted for subtraction\n\n");
+	printf("Enter the two numbers for operation\n");
+	scanf("%d %d",&a,&b);
+	printf("The result is = %d\n",a-b);
+	printf("---------------------------------------------\n");
+}
+void mul()
+{
+	int a,b;
+	printf("You opted for Multiplication\n\n");
+	printf("Enter the two numbers for operation\n");
+	scanf("%d %d",&a,&b);
+	printf("The result is = %d\n",a*b);
+	printf("---------------------------------------------\n");
+}
+void div()
+{
+	int a,b;
+	printf("You opted for Division\n\n");
+	printf("Enter the two numbers for operation\n");
+	scanf("%d %d",&a,&b);
+	printf("The result is = %d\n",a/b);
+	printf("---------------------------------------------\n");
+}
